@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "CSA Test Journal",
-            "content": "print(&#39;Hello World&#39;) .",
+            "content": "print(&#39;Hello World&#39;) . System.out.println(“Hello World”) .",
             "url": "https://vunsh.github.io/blogging/fastpages/jupyter/2020/08/21/CSA-Testing.html",
             "relUrl": "/fastpages/jupyter/2020/08/21/CSA-Testing.html",
             "date": " • Aug 21, 2020"
