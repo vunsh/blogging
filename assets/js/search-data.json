@@ -13,10 +13,10 @@
   
     
         ,"post1": {
-            "title": "Title",
-            "content": ". toc: true layout: post description: Notes for CSA Lectures. categories: [Journal] . title: CSA Journals . Anatomy of Java ~ 8/19/22 . Front Matter . Front Matter - works with Jupyter notebooks to deploy bogs into fastpages | Journals/Code examples possible, migrate from using Google Docs etc to Markdown and Jupyter | . Java Info . Multiple functions/classes can have the same name with different signatures (parameters, etc) | Java is an Object Oriented Programming language | . Primitive Data ~ 8/23/22 . Primitve Data Types . Things like booleans and numeric data types are considered primitive. | . Non Primitive Data Types . Everything else (String, Array, etc.) | . public class DefinePrimitives { public static void main(String[] args) { int anInt = 100; double aDouble = 89.9; boolean aBoolean = true; // not primitives but essential String aString = &quot;Hello, World!&quot;; // wrapper class shortcut assignment String aStringFormal = new String(&quot;Greetings, World!&quot;); System.out.println(&quot;anInt: &quot; + anInt); System.out.println(&quot;aDouble: &quot; + aDouble); System.out.println(&quot;aBoolean: &quot; + aBoolean); System.out.println(&quot;aString: &quot; + aString); System.out.println(&quot;aStringFormal: &quot; + aStringFormal); } } DefinePrimitives.main(null) .",
-            "url": "https://vunsh.github.io/blogging/2020/08/22/CSA-Notebooks.html",
-            "relUrl": "/2020/08/22/CSA-Notebooks.html",
+            "title": "CSA Journals",
+            "content": "public class DefinePrimitives { public static void main(String[] args) { int anInt = 100; double aDouble = 89.9; boolean aBoolean = true; // not primitives but essential String aString = &quot;Hello, World!&quot;; // wrapper class shortcut assignment String aStringFormal = new String(&quot;Greetings, World!&quot;); System.out.println(&quot;anInt: &quot; + anInt); System.out.println(&quot;aDouble: &quot; + aDouble); System.out.println(&quot;aBoolean: &quot; + aBoolean); System.out.println(&quot;aString: &quot; + aString); System.out.println(&quot;aStringFormal: &quot; + aStringFormal); } } DefinePrimitives.main(null) .",
+            "url": "https://vunsh.github.io/blogging/journal/2020/08/22/CSA-Notebooks.html",
+            "relUrl": "/journal/2020/08/22/CSA-Notebooks.html",
             "date": " • Aug 22, 2020"
         }
         
