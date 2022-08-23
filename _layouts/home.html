@@ -8,22 +8,7 @@ layout: default
   {%- endif -%}
 
   {{ content | markdownify }}
-
-
-  {% if site.paginate %}
-    {% assign rawposts = paginator.posts %}
-  {% else %}
-    {% assign rawposts = site.posts %}
-  {% endif %}
-
-  <!-- Hide posts if front matter flag hide:true -->
-  {% assign posts = ''|split:'' %}
-  {% for post in rawposts %}
-    {% if post.hide != true %}
-      {% assign posts = posts|push:post%}
-    {% endif %}
-  {% endfor %}
-
+  
   <!-- Sort posts by rank, then date -->
   {% assign grouped_posts = posts | group_by: "sticky_rank" | sort: "name", "last" %}
   {% assign sticky_posts = ''|split:'' %}
@@ -58,6 +43,22 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
+
+  {% if site.paginate %}
+    {% assign rawposts = paginator.posts %}
+  {% else %}
+    {% assign rawposts = site.posts %}
+  {% endif %}
+
+  <!-- Hide posts if front matter flag hide:true -->
+  {% assign posts = ''|split:'' %}
+  {% for post in rawposts %}
+    {% if post.hide != true %}
+      {% assign posts = posts|push:post%}
+    {% endif %}
+  {% endfor %}
+
+
 
     {% if site.paginate and site.posts.size > site.paginate %}
       <div class="pager">
