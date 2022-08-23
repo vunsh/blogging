@@ -17,6 +17,11 @@ title: CSA Journals
 - Multiple functions/classes can have the same name with different signatures (parameters, etc)
 - Java is an Object Oriented Programming language
 
+# **Primitive Data ~ 8/23/22**
+
+
+## Primitve Data Types
+- Things like booleans and numeric data types are considered primitive.
 
 
 
