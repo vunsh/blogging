@@ -1,5 +1,4 @@
 ---
-layout: default
 permalink: /calendar/
 title: Calendar
 search_exclude: false
@@ -26,7 +25,7 @@ search_exclude: false
     </h2>
     <br />
   
-    <table class = "table" bgcolor="lightgrey" align="center" 
+    <table class = "table" border-collapse: "collapse" bgcolor="lightgrey" align="center" 
         cellspacing="30" cellpadding="30">
   
         <!-- The tr tag is used to enter 
@@ -145,6 +144,7 @@ search_exclude: false
 </body>
 <style>
     #heads{
+        border-collapse: collapse;
         font-family: 'Roboto', sans-serif;
     }
     #list{
@@ -178,8 +178,8 @@ search_exclude: false
         right: 0;
         /* make it a little smaller than the page */
         width: 300px;
-        height: 62%;
-        margin-top:2%;
+        height: 68%;
+        margin-top:3%;
         /* make it a little bit transparent */
         background: rgba(238, 216, 248, 0.5);
         /* make it scrollable */
@@ -209,7 +209,9 @@ search_exclude: false
         font-style: italic;
         font-size: 30px;
     }
-
+    td{
+        border-collapse: collapse;
+    }
     td.a:hover {
     background: rgb(248, 242, 250);
 }
