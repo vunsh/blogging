@@ -198,12 +198,14 @@ window.onload = wrap_img;
     </table>
 
     <div id='info'>
-        <div class="num-24">
-            <li>Work on CSA Weekly Tasks</li><ui></ui>
+        <div id = "list" class="num-24">
+            <h1 id = "dateside">August 24th</h1>
+            <li>Work on CSA Weekly Tasks</li><ui></ui><ui></ui>
             <li>Work on My Life Storyboards for DMP</li>
         </div>
-        <div class="num-25">
-            <li>Submit History Presentation</li><ui></ui>
+        <div id = "list" class="num-25">
+            <h1 id = "dateside">August 25th</h1>
+            <li>Submit History Presentation</li><ui></ui><ui></ui>
             <li>Start filming My Life project</li>
         </div>
     
@@ -214,7 +216,20 @@ window.onload = wrap_img;
     #heads{
         font-family: 'Roboto', sans-serif;
     }
+    #list{
+        margin-top: 5%;
+        /* make the space between each list element larger */
+        padding: 5px;
+        /* make the list elements appear as a block element */
+        display: block;
+    }
+    #dateside{
+        font-size: 40px;
 
+
+        margin-bottom: 80%;
+        font-family: 'Roboto', sans-serif;
+    }
     #info{
         /* make it a box on the right side of the page */
         position: absolute;
@@ -224,21 +239,17 @@ window.onload = wrap_img;
         width: 300px;
         height: 100%;
         /* make it a little bit transparent */
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(238, 216, 248, 0.5);
         /* make it scrollable */
         overflow: auto;
-    
-        /* font-family: 'Roboto', sans-serif;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: 150px;
-        background: rgb(236, 234, 238);
-        color: black;
-        text-align: center;
-        font-size: 20px;
-        padding-top: 10px; */
         display: none;
+        /* make the text bigger and in the center of the box */
+        text-align: center;
+        /* make the text bigger */
+        font-size: 1.2em;
+        /* make the text bold */
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
     }
     .num-24{
         display: none;
@@ -258,6 +269,7 @@ window.onload = wrap_img;
     background: rgb(248, 242, 250);
 }
 td{
+    transition: all 0.3s ease;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
