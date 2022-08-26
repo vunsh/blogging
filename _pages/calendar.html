@@ -33,13 +33,13 @@ search_exclude: false
   
     <!-- cellspacing is used to specify the 
         space between the cell and its contents -->
-    <h2 align="center" style="color: orange;">
-        January 2021
+    <h2 id = "month" align="center" style="color: rgba(146, 113, 170, 0.521);">
+        August
     </h2>
     <br />
   
-    <table bgcolor="lightgrey" align="center" 
-        cellspacing="21" cellpadding="21">
+    <table class = "table" bgcolor="lightgrey" align="center" 
+        cellspacing="30" cellpadding="30">
   
         <!-- The tr tag is used to enter 
             rows in the table -->
@@ -62,84 +62,123 @@ search_exclude: false
             appear as bold and is center aligned-->
   
         <thead>
-            <tr>
+            <tr id = "heads">
                 <!-- Here we have applied inline style 
                      to make it more attractive-->
-                <th style="color: white; background: purple;">
+                <th style="color: black; background: rgb(236, 234, 238);">
                     Sun</th>
-                <th style="color: white; background: purple;">
+                <th style="color: black; background: rgb(236, 234, 238);">
                     Mon</th>
-                <th style="color: white; background: purple;">
+                <th style="color: black; background: rgb(236, 234, 238);">
                     Tue</th>
-                <th style="color: white; background: purple;">
+                <th style="color: black; background: rgb(236, 234, 238);">
                     Wed</th>
-                <th style="color: white; background: purple;">
+                <th style="color: black; background: rgb(236, 234, 238);">
                     Thu</th>
-                <th style="color: white; background: purple;">
+                <th style="color: black; background: rgb(236, 234, 238);">
                     Fri</th>
-                <th style="color: white; background: purple;">
+                <th style="color: black; background: rgb(236, 234, 238);">
                     Sat</th>
             </tr>
         </thead>
   
-        <tbody>
+        <tbody id = "head">
             <tr>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>1</td>
-                <td>2</td>
+                <td class = "a">1</td>
+                <td class = "a">2</td>
+                <td class = "a">3</td>
+                <td class = "a">4</td>
+                <td class = "a">5</td>
+                <td class = "a">6</td>
             </tr>
             <tr></tr>
             <tr>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
+                <td class = "a">7</td>
+                <td class = "a">8</td>
+                <td class = "a">9</td>
+                <td class = "a">10</td>
+                <td class = "a">11</td>
+                <td class = "a">12</td>
+                <td class = "a">13</td>
             </tr>
             <tr>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
-                <td>13</td>
-                <td>14</td>
-                <td>15</td>
-                <td>16</td>
+                <td class = "a">14</td>
+                <td class = "a">15</td>
+                <td class = "a">16</td>
+                <td class = "a">17</td>
+                <td class = "a">18</td>
+                <td class = "a">19</td>
+                <td class = "a">20</td>
+                
             </tr>
             <tr>
-                <td>17</td>
-                <td>18</td>
-                <td>19</td>
-                <td>20</td>
-                <td>21</td>
-                <td>22</td>
-                <td>23</td>
+                <td class = "a">21</td>
+                <td class = "a">22</td>
+                <td class = "a">23</td>
+                <td class = "a">24</td>
+                <td class = "a">25</td>
+                <td class = "a">26</td>
+                <td class = "a">27</td>
             </tr>
             <tr>
-                <td>24</td>
-                <td>25</td>
-                <td>26</td>
-                <td>27</td>
-                <td>28</td>
-                <td>29</td>
-                <td>30</td>
-            </tr>
-            <tr>
-                <td>31</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
+                <td class = "a">28</td>
+                <td class = "a">29</td>
+                <td class = "a">30</td>
+                <td class = "a">31</td>
+                <td >1</td>
+                <td >2</td>
+                <td >3</td>
             </tr>
         </tbody>
     </table>
+
+    <div hidden id='info'>
+        <div class="24">
+            <li>Do your howework</li>
+        </div>
+        <div class="25">
+            <li>Study for this test</li>
+        </div>
+    
+
+    </div>
 </body>
-  
+<style>
+    #heads{
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #info{
+        font-family: 'Roboto', sans-serif;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 150px;
+        background: rgb(236, 234, 238);
+        color: black;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    #month{
+        font-family: 'Roboto', sans-serif;
+        /* make the text bold italic */
+        font-weight: bold;
+        font-style: italic;
+        font-size: 30px;
+    }
+
+    td.a:hover {
+    background: rgb(248, 242, 250);
+}
+td{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+</style>
+<script>
+    const info = document.getElementById('info');
+</script>
 </html>
