@@ -11,6 +11,7 @@ search_exclude: false
 </head>
   
 <body>
+    <button id = "return" onclick="window.location.href='https://vunsh.github.io/blogging/'">Return to FastPages</button>
     <!-- Here we are using attributes like
         cellspacing and cellpadding -->
   
@@ -20,13 +21,13 @@ search_exclude: false
   
     <!-- cellspacing is used to specify the 
         space between the cell and its contents -->
-    <h2 id = "month" align="center" style="color: rgba(220, 192, 240, 0.521);">
+    <h2 id = "month" align="center" style="color: rgba(255, 255, 255, 0.815);">
         August
     </h2>
     <br />
   
     <table class = "table" border-collapse: "collapse" bgcolor="lightgrey" align="center" 
-        cellspacing="30" cellpadding="30">
+        cellspacing="40" cellpadding="40">
   
         <!-- The tr tag is used to enter 
             rows in the table -->
@@ -71,7 +72,7 @@ search_exclude: false
   
         <tbody id = "head">
             <tr>
-                <td></td>
+                <td class = 'dead' ></td>
                 <td class = "a" id = "num-1">1</td>
                 <td class = "a" id = "num-2">2</td>
                 <td class = "a" id = "num-3">3</td>
@@ -113,9 +114,9 @@ search_exclude: false
                 <td class = "a" id = "num-29">29</td>
                 <td class = "a" id = "num-30">30</td>
                 <td class = "a" id = "num-31">31</td>
-                <td >1</td>
-                <td >2</td>
-                <td >3</td>
+                <td class = 'dead' >1</td>
+                <td class = 'dead' >2</td>
+                <td class = 'dead' >3</td>
             </tr>
         </tbody>
     </table>
@@ -161,16 +162,44 @@ search_exclude: false
         margin-bottom: 80%;
         font-family: 'Roboto', sans-serif;
     }
+    .dead{
+        background: rgba(224, 224, 224, 0.5);
+        color:rgb(82, 82, 82);
+    }
     table {
             border-collapse: collapse;
-            background: white;
+            background: rgba(255, 255, 255, 0.9);
             color: black;
+            /* make the table fade in */
+            transition: opacity .25s;
+            
         }
           
         th,
         td {
             font-weight: bold;
         }
+    #return{
+        /* make the button borderless */
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        font-size: 15px;
+        /* make the border transparent */
+        background-color: rgba(174, 143, 194, 0.5);
+        border-radius: 12px;
+        color: rgb(255, 255, 255);
+        border: none;
+        /* make the button have rouneded corners */
+
+        padding: 15px;
+        
+        /*make the button have a transition */
+        transition: all 0.3s ease-in-out;
+    }
+    /* make the button have a hover effect */
+    #return:hover {
+        background: rgb(209, 168, 255);
+    }
     #info{
         /* make it a box on the right side of the page */
         position: absolute;
@@ -178,8 +207,7 @@ search_exclude: false
         right: 0;
         /* make it a little smaller than the page */
         width: 300px;
-        height: 68%;
-        margin-top:3%;
+        height: 100%;
         /* make it a little bit transparent */
         background: rgba(238, 216, 248, 0.5);
         /* make it scrollable */
@@ -209,17 +237,41 @@ search_exclude: false
         font-style: italic;
         font-size: 30px;
     }
+
     td{
         border-collapse: collapse;
     }
     td.a:hover {
-    background: rgb(248, 242, 250);
+    background: rgba(230, 158, 252, 0.884);
 }
 td{
     transition: all 0.3s ease;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  body {
+    color:white;
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
 </style>
 <script>
     const info = document.getElementById('info');
