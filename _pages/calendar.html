@@ -149,11 +149,7 @@ search_exclude: false
         font-family: 'Roboto', sans-serif;
     }
     #list{
-        margin-top: 5%;
-        /* make the space between each list element larger */
-        padding: 5px;
-        /* make the list elements appear as a block element */
-        display: block;
+        display: none;
     }
     #dateside{
         font-size: 40px;
@@ -198,6 +194,7 @@ search_exclude: false
     }
     /* make the button have a hover effect */
     #return:hover {
+        cursor: grab;
         background: rgb(209, 168, 255);
     }
     #info{
@@ -284,10 +281,12 @@ html, body {
             const cellId = cell.id;
             const infoId = `${cellId}`;
             const infoItem = document.getElementsByClassName(infoId);
+            if(!infoItem) return console.log('BALLLSLLSL')
             for(i = 0; i < infoItem.length; i++) {
+             if(!infoItem[i].style) return 
              infoItem[i].style.display = 'block';
+             info.style.display = 'block';
             }
-            info.style.display = 'block';
         } )
     } )
     cells.forEach(cell => {
