@@ -80,12 +80,13 @@ window.onload = wrap_img;
     // Get the checkbox
     const checkbox = document.getElementById('check');
     checkbox.addEventListener('change', (event) => {
+      console.log('test');
       if (event.target.checked) {
-        document.body.style.backgroundColor = "black";
-        document.body.style.color = "white";
-      } else {
         document.body.style.backgroundColor = "white";
         document.body.style.color = "black";
+      } else {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
       }
     });
 
@@ -231,6 +232,7 @@ border-radius: 34px;
 border-radius: 50%;
 }
 </style>
+
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/blogging/"></data>
