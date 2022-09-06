@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Code.org",
-            "content": "![test](images/CLCEqc0.png) .",
+            "content": "![test]({{site.baseurl}}/images/CLCEqc0.png) .",
             "url": "https://vunsh.github.io/blogging/csa/jupyter/code.org/2022/09/06/CodeOrg.html",
             "relUrl": "/csa/jupyter/code.org/2022/09/06/CodeOrg.html",
             "date": " • Sep 6, 2022"
