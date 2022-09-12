@@ -146,7 +146,13 @@ search_exclude: false
             <li>Gym at 3 pm today</li><ui></ui>
             <li>Work on History Presentation</li>
         </div>
-    
+        <div id="list" class="num-12">
+            <h1 id="dateside">September 12th</h1>
+            <li>Spread out this week catching up on Civics missing assignments</li>
+            <li>Finish How To storyboards today</li>
+            <li>Help Aarav (team member in CSA) with deployment of website</li>
+            <li>Make CSA ticket</li>
+        </div>
 
     </div>
 </body>
@@ -174,9 +180,13 @@ search_exclude: false
             background: rgba(255, 255, 255, 0.9);
             color: black;
             /* make the table fade in */
-            transition: opacity .25s;
+            animation: fadeIn 1s;
             
         }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+}
           
         th,
         td {
@@ -222,9 +232,14 @@ search_exclude: false
         /* make the text bigger */
         font-size: 1.2em;
         /* make the text bold */
+        animation: fadeIn 1s;
         font-weight: bold;
         font-family: 'Roboto', sans-serif;
     }
+    @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+}
     .num-24{
         display: none;
     }
