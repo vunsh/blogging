@@ -73,8 +73,96 @@ window.onload = wrap_img;
       <div class="wrapper">
         <div class="home"><link rel=" url" href="https://avatars.githubusercontent.com/u/77084624?v=4" />
 
-<p>This site is built with <a href="https://github.com/fastai/fastpages">fastpages</a>, An easy to use blogging platform with extra features for Jupyter Notebooks.</p>
+<body>
+    <div class="weather">
+    <img src="" alt="Icon" id="icon" />
 
+   <div id="city">
+
+   </div>
+<div id="container"> 
+   <div id="temp"> </div>
+</div>
+
+
+   <div id="description">
+
+   </div>
+
+</div>
+<style>
+    #icon{
+        animation: fadeIn ease 1s;
+    }
+    @keyframes fadeIn{
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+
+    #city{
+        font-size: 15px;
+        font-weight: 600;
+        color: rgb(0, 0, 0);
+        margin-top: 10px;
+        animation: fadeIn ease 1.5s;
+        animation-delay: .5s;
+    }
+    @keyframes fadeIn{
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+    #temp {
+        margin-top:-.1%;
+        overflow: hidden;
+        font-size: 50px;
+        font-weight: 600;
+        color: rgb(14, 10, 10);
+        animation: 
+        typing 1.5s forwards;
+        width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+    #weather{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    body {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        justify-content: center;
+    }
+</style>
+    <script>
+        
+var temp=document.getElementById("temp")
+var city=document.getElementById("city")
+var image = document.getElementById("icon")
+
+
+    fetch(`https://api.weatherbit.io/v2.0/current?lat=33.0167&lon=-117.1115&key=17270180ead94b27a3e874f0cdd513ec`)
+    .then(function(res){
+        return res.json()
+    })
+    .then(function(data){
+        const temper = data.data[0].temp
+        const fahrenheit = (temper * 9/5) + 32
+        temp.innerHTML = `<h1 id = "temp">${fahrenheit} F°</h1>`
+        city.innerHTML = `<h1>4s Ranch, San Diego</h1>`
+        image.src=`https://www.weatherbit.io/static/img/icons/${data.data[0].weather.icon}.png`
+
+            
+    
+    })
+
+
+    </script>
+</body>
 <h1 id="posts">Posts</h1>
 
 
