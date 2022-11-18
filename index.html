@@ -143,7 +143,7 @@ window.onload = wrap_img;
 }
 
     #weather{
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -166,13 +166,16 @@ var image = document.getElementById("icon")
         return res.json()
     })
     .then(function(data){
+        if(!data) return;
         const temper = data.data[0].temp
         const fahrenheit = (temper * 9/5) + 32
         temp.innerHTML = `<h1 id = "temp">${fahrenheit} F°</h1>`
+        temp.style.display = 'flex';
         city.innerHTML = `<h1>4s Ranch, San Diego</h1>`
+        city.style.display = 'flex';
         image.src=`https://www.weatherbit.io/static/img/icons/${data.data[0].weather.icon}.png`
-
-            
+        image.style.display = 'flex';
+        
     
     })
 
@@ -199,7 +202,14 @@ var image = document.getElementById("icon")
 
    <!-- Assemble final sorted posts array -->
   
-  </div>
+  <ul class="post-list"><li><h3>
+    <a class="post-link" href="/blogging/fastpages/jupyter/frq/csa/2022/11/18/CSA-FRQ.html">
+    FRQ Answers: CSA 2019 AP Exam
+    </a>
+</h3><p class="post-meta-description">Answers to the 2019 AP Exam FRQ questions</p><p class="post-meta">Nov 18, 2022</p>
+</li></ul>
+
+    </div>
 
 <style>
   /* The switch - the box around the slider */
