@@ -4,6 +4,7 @@ layout: post
 description: Vunsh's first post.
 categories: [markdown]
 title: First Blog Post
+hide: true
 ---
 # Welcome to my blog!
 
