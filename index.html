@@ -74,7 +74,7 @@ image: images/logo.png
 }
 
     #weather{
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -97,13 +97,16 @@ var image = document.getElementById("icon")
         return res.json()
     })
     .then(function(data){
+        if(!data) return;
         const temper = data.data[0].temp
         const fahrenheit = (temper * 9/5) + 32
         temp.innerHTML = `<h1 id = "temp">${fahrenheit} F°</h1>`
+        temp.style.display = 'flex';
         city.innerHTML = `<h1>4s Ranch, San Diego</h1>`
+        city.style.display = 'flex';
         image.src=`https://www.weatherbit.io/static/img/icons/${data.data[0].weather.icon}.png`
-
-            
+        image.style.display = 'flex';
+        
     
     })
 
